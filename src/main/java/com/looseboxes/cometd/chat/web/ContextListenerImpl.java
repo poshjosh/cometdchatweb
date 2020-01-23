@@ -16,7 +16,8 @@
 
 package com.looseboxes.cometd.chat.web;
 
-import com.looseboxes.cometd.chat.CometdChat;
+import com.looseboxes.cometd.chat.CometdContext;
+import com.looseboxes.cometd.chat.CometdContextImpl;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.servlet.ServletContext;
@@ -53,7 +54,9 @@ public class ContextListenerImpl implements ServletContextListener {
             
             new ReadLoggingConfig().accept(loggingConfig);
 
-            final String cometdAppName = new CometdChat(context).getAppName();
+            final CometdContext cometdContext = new CometdContextImpl(context);
+            
+            final String cometdAppName = cometdContext.getAppName();
             
         }catch(RuntimeException e) {
             
