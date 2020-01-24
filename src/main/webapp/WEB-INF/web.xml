@@ -26,6 +26,15 @@
         <filter-name>continuation</filter-name>
         <url-pattern>/cometd/*</url-pattern>
     </filter-mapping>
+    <!-- Servlet to query chat members -->
+    <servlet>
+        <servlet-name>ChatMembers</servlet-name>
+        <servlet-class>com.looseboxes.cometd.chat.web.ChatMembers</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ChatMembers</servlet-name>
+        <url-pattern>/chatMembers</url-pattern>
+    </servlet-mapping>
     <!-- Servlets to query messages -->
     <servlet>
         <servlet-name>messages</servlet-name>
