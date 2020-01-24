@@ -23,13 +23,7 @@
         </p>
         
         <p>
-            <a href="${pageContext.servletContext.contextPath}/chat/joinroom.jsp">Join Chat Room</a>
-        </p>
-        <p>
-            <a href="${pageContext.servletContext.contextPath}/autoJoinChat.jsp">Auto Join Chat Room</a>
-        </p>
-        <p>
-            <a href="${pageContext.servletContext.contextPath}/autoDisplayWindow.jsp">Auto Display Chat Window</a>
+            <a href="${pageContext.servletContext.contextPath}/chatroom.jsp">Join Chat Room</a>
         </p>
         
     </body>
